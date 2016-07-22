@@ -1,0 +1,55 @@
+﻿<html>
+<body>
+        <div class="container col-md-4">
+            <h4>{{welcomeMessage}}</h4>
+            <a href="{{infoProfile.link}}"><img ng-src="{{picture}}" /></a>
+            <div ng-if = "ifIsLogged == false ">
+                <button class="btn btn-default" ng-click="login()">Login</button>
+            </div>
+            <div ng-if = "ifIsLogged == true ">
+                <button class="btn btn-default" ng-click="logout()">Logout</button>
+            </div>
+            
+            <br /><br />
+            <div class="well" ng-show = "ifIsLogged">
+                <h3>User Info</h3>
+                <ul>
+                    <li>ID: {{infoProfile.id}}</li>
+                    <li>First Name: {{infoProfile.first_name}}</li>
+                    <li>Last Name: {{infoProfile.last_name}}</li>
+                    <li>Email: {{infoProfile.email}}</li>
+                    <li>Gender: {{infoProfile.gender}}</li>
+                    <li>Locale: {{infoProfile.locale}}</li>
+                </ul>
+            </div>
+            <br />
+   
+        </div>
+    <div ng-if="ifIsLogged == false">
+        <h3>Welcome to Facebook</h3>
+        <p>Please login to post into your profile</p>
+    </div>
+        <div class="container col-md-8" ng-show = "ifIsLogged">
+            <div class="col-md-8">
+                <form ng-submit="toPost()">
+                    <div class="form-group">
+                        <label>Status Update</label>
+                        <textarea class="form-control" ng-model="myPost"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <br /><br />
+                <div class="col-md-12 well" ng-repeat="post in posts">
+                    <div class="row">
+                        <img ng-src="{{picture}}" />
+                        <label>{{post.story}}</label>
+                    </div>
+                    <div class="row">
+                        <br />
+                        <label>{{post.message}}</label>
+                    </div>
+                </div>
+            </div>  
+        </div>
+</body>
+</html>
