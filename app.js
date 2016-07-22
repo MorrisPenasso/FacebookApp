@@ -17,7 +17,7 @@ myApp.config(["$routeProvider", function ($routeProvider) {
 
     //Configure ngFacebook with $facebookProvider object
     //all sdk functions that use with ngFacebook, will be executed into Facebook application
-    $facebookProvider.setAppId("115647552202807");
+    $facebookProvider.setAppId("YourIDApplication");
 
     //all sdk function that use with ngFacebook, have this permissions
     $facebookProvider.setPermissions("email, public_profile, user_posts, publish_actions, user_photos");
