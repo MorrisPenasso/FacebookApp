@@ -7,6 +7,7 @@ I built this application with **AngularJS, ngFacebook module, bootstrap Theme ( 
 For the first thing, you must create this project with angular-seed repository present in GitHub. For more informations, see my templateStore repository or follow the steps at this link: https://github.com/angular/angular-seed
 
 When you have create angular-seed project, past my files and folders into your project and delete views1 and views2 folders.
+Finally, when you installed Bootstrap with Bower, get source code of Cerulean theme at follow link: https://bootswatch.com/ and replace Bootstrap code with this.
 
 
 To use this application, you must create a Facebook app at follow link: https://developers.facebook.com/
