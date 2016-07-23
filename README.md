@@ -15,7 +15,7 @@ Insert your Facebook credentials for access into Developer Console and follow st
 
 When you will create a new Facebook application, you will obtain an ID. With this ID, you will must insert into app.js file where i have insert this string: " $facebookProvider.setAppId("YourIDApplication"); ". 
 
-**### MOST IMPORTANT: We use ngFacebook module into Angular Module for use and control SDK Facebook functions, we use ngFacebook object " $facebookProvider.setAppId(""); " to load this functions into your Facebook App and finally, the Facebook Application send request at your Facebook Profile.
+**MOST IMPORTANT: We use ngFacebook module into Angular Module for use and control SDK Facebook functions, we use ngFacebook object " $facebookProvider.setAppId(""); " to load this functions into your Facebook App and finally, the Facebook Application send request at your Facebook Profile.
 For more information about ngFacebook module, please visit this repository: https://github.com/GoDisco/ngFacebook**
 
 Start "npm start" command and call "localhost:8000" from your browser.
