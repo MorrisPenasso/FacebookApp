@@ -20,4 +20,4 @@ For more information about ngFacebook module, please visit this repository: http
 
 Start "npm start" command and call "localhost:8000" from your browser.
 
-Open my video demostration: [FacebookApp.zip](https://github.com/MorrisPenasso/FacebookApp/files/378999/FacebookApp.zip)
+**Please download video demostration into "videoTrailer" directory.**
